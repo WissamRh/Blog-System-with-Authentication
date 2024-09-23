@@ -34,15 +34,12 @@ cd Blog-System-with-Authentication
 Accessing the Frontend
 To access the frontend, make sure localhost:3000 is not used by any other service:
 
-bash
-Copy code
+
 cd blog-frontend
 npm start  # to run the frontend
 Accessing the Backend
 To access the backend, make sure localhost:3001 is not used by any other service:
 
-bash
-Copy code
 cd blog-backend
 node index.js  # to run the backend
 Database Setup

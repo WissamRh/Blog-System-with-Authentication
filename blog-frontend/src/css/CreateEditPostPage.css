@@ -1,0 +1,83 @@
+.create-edit-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.create-edit-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+  
+.create-edit-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.create-edit-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.create-edit-form input,
+.create-edit-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+.create-edit-form input:focus,
+.create-edit-form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+  
+.create-edit-form button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-edit-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the button container to align both buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+.back-to-posts-button {
+    padding: 10px 20px;
+    background-color: #6c757d; /* Different background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-posts-button:hover {
+    background-color: #5a6268;
+}
+  
+@media (min-width: 768px) {
+    .create-edit-container {
+      padding: 40px;
+    }
+
+    .create-edit-form {
+      width: 80%;
+      margin: 0 auto;
+    }
+}

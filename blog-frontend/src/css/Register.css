@@ -1,0 +1,63 @@
+.register-page body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+.register-page form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-page h1 {
+    text-align: center;
+    color: #333;
+}
+
+.register-page input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-page input:focus {
+    border-color: #007BFF;
+    outline: none;
+    border-width: 2px;
+}
+
+.register-page button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Change to block to allow centering */
+    margin: 20px auto; /* Center button horizontally and add top margin */
+}
+
+.register-page button:hover {
+    background-color: #0056b3;
+}
+
+.register-page p {
+    text-align: center;
+    margin: 15px 0; /* Space between paragraphs */
+}
+
+.register-page p button {
+    margin-left: 5px; /* Space between text and button */
+    display: inline; /* Keep inline for better alignment */
+}
+
+.register-page p:last-of-type {
+    margin-top: 10px; /* Space above the 'Go to Posts' button */
+}

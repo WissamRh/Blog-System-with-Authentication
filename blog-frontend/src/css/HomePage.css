@@ -1,0 +1,138 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .home-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  /* Flexbox for centering posts */
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  /* For single post */
+  .posts-list.single-post {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for each post */
+  .post-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px; /* Space between posts */
+    transition: transform 0.2s ease-in-out;
+    width: 100%; /* Ensure full width */
+    max-width: 400px; /* Limit width to prevent overlap */
+  }
+  
+  .post-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .post-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .post-item p {
+    color: #555;
+  }
+  
+  /* New post button */
+  .new-post-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .new-post-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Logout button */
+.logout-button {
+    margin-top: 10px; /* Add space between the two buttons */
+    padding: 10px 20px;
+    background-color: #FF4136; /* Red color for the logout button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logout-button:hover {
+    background-color: #C0392B; /* Darker red on hover */
+}
+  
+  /* Grid layout for multiple posts on larger screens */
+  @media (min-width: 768px) {
+    .posts-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; /* Space between posts */
+      width: 100%; /* Ensure it uses full width */
+    }
+  
+    /* When there is only one post, center it */
+    .posts-list.single-post {
+      display: flex;
+      justify-content: center;
+      grid-template-columns: 1fr; /* Ensures single post takes full width */
+    }
+  }
+  
+  .search-bar {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .search-bar:focus {
+    outline: none;
+    border-color: #007BFF;
+    border-width: 2px;
+  }
+  
+  .pagination button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination button:hover {
+    background-color: #f0f0f0;
+  }
+  

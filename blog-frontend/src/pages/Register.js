@@ -11,7 +11,7 @@ const RegisterPage = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/register', { username, password });
+      await axios.post('https://blog-system-with-authentication.onrender.com/register', { username, password });
       alert('User registered successfully');
       navigate('/login'); // Redirect to login after registration
     } catch (error) {

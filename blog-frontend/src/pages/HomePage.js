@@ -12,7 +12,7 @@ const HomePage = ({ token, setToken }) => {
   const navigate = useNavigate(); // For navigation after logout
 
   useEffect(() => {
-    axios.get('http://localhost:3001/posts')
+    axios.get('https://blog-system-with-authentication.onrender.com/posts')
       .then(response => {
         setPosts(response.data);
         setFilteredPosts(response.data); // Initially, all posts are shown

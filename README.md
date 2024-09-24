@@ -1,7 +1,7 @@
 # Blog System with Authentication
 
 A blog system built with React, Node.js, Express, and MySQL. Users can create, read, update, and delete posts with authentication. Features include search, pagination, and a responsive design. Only authenticated users can manage posts, while the homepage is publicly accessible.
-##Live link 
+
 - **https://blog-system-with-authentication-frontend.onrender.com/**
 ## Features
 - **CRUD Operations**: Users can create, read, update, and delete posts.

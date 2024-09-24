@@ -9,7 +9,7 @@ const PostDetailsPage = ({ token }) => {  // Receive token as a prop
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/posts/${id}`)
+    axios.get(`https://blog-system-with-authentication.onrender.com/posts/${id}`)
       .then(response => {
         setPost(response.data);
       })
@@ -24,7 +24,7 @@ const PostDetailsPage = ({ token }) => {  // Receive token as a prop
       return;
     }
 
-    axios.delete(`http://localhost:3001/posts/${id}`, {
+    axios.delete(`https://blog-system-with-authentication.onrender.com/posts/${id}`, {
       headers: { Authorization: token },  // Include token in the headers
     })
       .then(() => {

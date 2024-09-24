@@ -11,7 +11,7 @@ const LoginPage = ({ setToken }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/login', { username, password });
+      const response = await axios.post('https://blog-system-with-authentication.onrender.com/login', { username, password });
       localStorage.setItem('token', response.data.token);
       setToken(response.data.token); // Pass token to App.js
       navigate('/'); // Redirect to homepage after login

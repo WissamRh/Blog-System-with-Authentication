@@ -19,7 +19,7 @@ const CreateEditPostPage = ({ token }) => { // Accept token as a prop
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:3001/posts/${id}`)
+      axios.get(`https://blog-system-with-authentication.onrender.com/posts/${id}`)
         .then(response => {
           const post = response.data;
           setTitle(post.title);
@@ -41,7 +41,7 @@ const CreateEditPostPage = ({ token }) => { // Accept token as a prop
     };
 
     if (id) {
-      axios.put(`http://localhost:3001/posts/${id}`, post, config)
+      axios.put(`https://blog-system-with-authentication.onrender.com/posts/${id}`, post, config)
         .then(() => {
           navigate(`/posts/${id}`);
         })
@@ -49,7 +49,7 @@ const CreateEditPostPage = ({ token }) => { // Accept token as a prop
           console.error("There was an error updating the post!", error);
         });
     } else {
-      axios.post('http://localhost:3001/posts', post, config)
+      axios.post('https://blog-system-with-authentication.onrender.com/posts', post, config)
         .then(() => {
           navigate('/');
         })
